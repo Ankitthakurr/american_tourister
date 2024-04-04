@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* /* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+html{
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} 
+
+
+/*     navbar  */
+
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gap-x-8 {
+    display: none;
+  }
+}
+
+/*     section one    */
+
+.slider{
+  background-color: rgba(65, 61, 61, 0.497);
+  padding: 10px 0px 8px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  bottom: 60px;
+}
+
+.hoverImg{
+  position: relative;
+  object-fit: fill;
+  border-radius: 5px;
+  width: 100px;
+  opacity: 0.6;
+  border: 1px solid transparent;
+}
+
+.hoverImg:hover{
+  cursor: pointer;
+  border: 1px solid white;
+  opacity: 1;
+  transition: border 0.2s ,transform 0.2s , opacity 0.2s;
+  transform: scale(1.2) translatey(-7px);
+}
+
+@media screen and (max-width: 750px) {
+  .hoverImg {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hoverImg {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hoverImg {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .hoverImg {
+    width: 55px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hoverImg {
+    width: 60px;
+  }
+  .slider{
+    gap :2px
+  }
+}
+
+
+/*     section two   */
+
+
+/*    heading text */
+.underLine{
+  display: block;
+  padding: 4px;
+  border-radius: 10px;
+  width: 75px;
+  
+  background: linear-gradient(90deg,#d11e47,#ef7922)
+
+}
+
+/*     button   */
+.btn{
+  color: rgb(35, 32, 32) ;
+  background-color:white;
+  font-size: 20px;
+  padding: 12px 21px ;
+  font-weight: bold;
+  border-radius: 28px;
+  /* line-height: 6px; */
+  box-shadow: 0 2px 7px -2px #333;
+}
+
+.btn:hover{
+  background-color:  rgb(35, 32, 32);
+  color: white;
+  cursor: pointer;
+  transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in,box-shadow .2s ease-in;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media screen and (max-width: 740px){
+.btnWrap{
+     flex-wrap: wrap;
+}
+}
+
+
+/*      section three */
+
+
+/*  add to   cart button   */
+
+.cartBtn{
+  
+  background-color:  rgb(35, 32, 32);
+  color: white;
+  font-size: 17.5px;
+  padding: 7px 21px ;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 30px;
+  /* line-height: 6px; */
+  
+}
+
+.cartBtn:hover{
+  color: rgb(35, 32, 32) ;
+  background-color:white;
+  box-shadow: 0 2px 7px -2px #333;
+  cursor: pointer;
+  transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in,box-shadow .2s ease-in;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.slider-cart::-webkit-scrollbar{
+display: none;
+}
+
+/*        section four */
+
+
+/*         left sidee */
+
+.clip-path{
+  clip-path: polygon(0% 15%, 0 0, 15% 0%, 100% 0, 100% 21%, 93% 21%, 93% 78%, 100% 78%, 100% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
+@media screen and (max-width: 768px){
+  .clip-path{
+       clip-path: none;
+  }
+  }
+
+
+
+  /*                 gradiant    */ 
+
+  .gradientBox {
+    display: flex;
+    justify-content: space-evenly;
+    clip-path: polygon(0 0, 1520px 100px, 1520px 532px, 0 450px);
+    background: linear-gradient(90deg, #d11e47, #ef7922);
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .box>img:hover {
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+
+  /*          rank slider   */
+
+  .upClass {
+    z-index: 10;
+    transition: all 1.1s ease-in-out;
+    transform: translateY(-40px);
+  }
+  
+  .upClass img {
+    box-shadow: 1px 2px 4px 1px rgba(40, 10, 10, 0.559);
+  }
+  
+  .abtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    box-shadow: 1px 2px 4px 1px rgba(40, 10, 10, 0.559);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .rankGradient {
+    height: 150px;
+    bottom: 40px;
+    width: 60%;
+    clip-path: polygon(0 0%, 100% 45px, 100% 100%, 0 85px);
+    background: linear-gradient(90deg, #d11e47, #ef7922);
+  }
+  
+  .objDiv strong {
+    color: white;
+    text-shadow: 1px 2px 4px rgba(40, 10, 10, 0.559);
+    padding: 0px 20px;
+  
+  }
+
+
+  /*    slider thirdd */
+
+  .moveBtn {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 4px rgba(40, 10, 10, 0.559);
+    color: black;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .moveBtn::after {
+    content: none;
+  }
+  
+  .thirdSlideImg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .thirdSlideImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.633);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .thirdSlideImg:hover::before {
+    opacity: 1;
+  }
+  
+  .thirdSlideText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .thirdSlideImg:hover .thirdSlideText {
+    opacity: 1;
+  }
+
+
+
+  /*          gradiat box two */
+  .gradientBoxTwo {
+    clip-path: polygon(0 0, 1520px 100px, 1520px 532px, 0 450px);
+    background: linear-gradient(90deg, #d11e47, #ef7922);
+  }
+
+
+  /*          gradiant third  */
+  .gradientThird {
+    clip-path: polygon(0 0, 1520px 100px, 1520px 532px, 0 450px);
+    background: linear-gradient(90deg, #d11e47, #ef7922);
+  }
+
+
+
+  .subbtn:hover {
+    /*Including abtn also for design*/
+    color: #ffffff;
+    background-color: #272727;
+  }
+  
+  /* / Fotter Two / */
+  .ulDiv li {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .ulDiv ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .AmericanFotter {
+    filter: brightness(0) invert(1);
+  }
+  
+  .AmericanFotterTwo {
+    width: 100px;
+    filter: invert(50%);
+  }
+  
+  .hr {
+    height: 2px;
+    background-color: #333;
+  }
+  
+  .whiteFooterOne li {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* / scroll / */
+  #scrollToTopBtn {
+    position: fixed;
+    font-size: 25px;
+    bottom: 50px;
+    height: 50px;
+    right: 30px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    border: 4px solid rgba(128, 128, 128, 0.648);
+    color: black;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  /* / signIn Page / */
+  
+  .btnLogin {
+    font-weight: 600;
+    border-radius: 50px;
+    color: #272727;
+    background-color: #ffffff;
+    border-color: #272727;
+    box-shadow: 0 2px 7px -2px #201f1f;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btnLogin:hover {
+    color: #ffffff;
+    background-color: #272727;
+  }
+  
+  .signForm input {
+    box-sizing: border-box;
+    color: white;
+    width: 90%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #d11e47, #ef7922);
+    outline: none;
+  }
+  
+  .signForm input:focus {
+    border: 2px solid aqua;
+  }
+  
+  .signForm input::placeholder {
+    color: white;
+    font-size: 13px;
+    font-weight: thin;
+  
+  }
+  
+  /* / hover div / */
+  .hoverDiv li:first-child {
+    font-weight: bold;
+  }
+  
+  .hoverDiv li {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .hoverDiv {
+    transition: all 2s;
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .tostify{
+    box-shadow: 2px 1px 25px 1px rgba(128, 128, 128, 0.648);
+  }
