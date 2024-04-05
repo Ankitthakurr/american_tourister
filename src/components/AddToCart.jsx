@@ -8,7 +8,8 @@ const AddToCart = ({item}) => {
 
   
   return (
-    <div className=" bg-slate-100 text-xs p-4 m-2">
+   
+     <div className=" bg-slate-100 text-xs p-4 m-2">
     <div className="flex items-center justify-between ">
       <img className="w-20" src={item.image} alt="" />
       <span>
@@ -32,6 +33,7 @@ const AddToCart = ({item}) => {
       </button>
     </div>
   </div>
+   
   )
 }
 

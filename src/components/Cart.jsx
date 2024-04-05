@@ -34,9 +34,11 @@ const Cart = () => {
             <p>QUANTITY</p>
           </span>
         </div>
-        {addToCart.map((item, i) => (
+       <div className=' max-h-[350px] overflow-y-auto'>
+       {addToCart.map((item, i) => (
           <AddToCart key={i} item={item} />
         ))}
+       </div>
       </div>
       <div className="rigthCart w-[35%] py-8 max-md:w-[90%] max-md:m-auto ">
         <div className="w-[80%] m-auto flex gap-3 flex-col">
@@ -71,7 +73,7 @@ const Cart = () => {
               APPLY COUPOUN
             </button>
           </div>
-          <button className=" cartBtn max-[400px]:text-sm ">CHECKOUT</button>
+          <button className=" cartBtn ">CHECKOUT</button>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const LoginSign = () => {
     return (
-        <div className='flex justify-evenly items-center h-[48vh] w-[70%] m-auto my-9 max-md:flex-col gap-4'>
+        <div className='flex justify-evenly items-center h-[66vh] w-[70%] m-auto my-9 max-md:flex-col gap-4'>
             <div className="flex flex-col justify-center items-start w-full gap-4 px-3 border-r-2 max-md:border-r-0 max-md:border-b-2 pb-3">
                 <span> <h3 className='text-3xl font-bold max-md:text-center max-md:text-2xl text-gray-700'>Sign In</h3>
                     <small className='font-light'>Existing Customer</small></span>

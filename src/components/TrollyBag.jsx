@@ -31,7 +31,7 @@ const TrollyBag = ({item}) => {
           </h1>
           <p className="text-gray-800 text-sm font-semibold mt-1.5 "><del>₹ {item.oldPrice.toLocaleString()}</del></p>
         </span>
-        <button type="button" onClick={handleCartAdd} className="cartBtn max-[400px]:text-sm">ADD TO CART</button>
+        <button type="button" onClick={handleCartAdd} className="cartBtn ">ADD TO CART</button>
       </div>
   );
 };

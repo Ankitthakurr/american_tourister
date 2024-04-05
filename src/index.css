@@ -75,22 +75,16 @@ body{
     width: 80px;
   }
 }
-@media screen and (max-width: 550px) {
-  .hoverImg {
-    width: 70px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .hoverImg {
-    width: 55px;
-  }
-}
+
 @media screen and (max-width: 380px) {
   .hoverImg {
     width: 60px;
   }
   .slider{
-    gap :2px
+    gap :1.5px
+  }
+  .cartBtn{
+    font-size: 15px; 
   }
 }
 
@@ -153,6 +147,20 @@ body{
   border-radius: 30px;
   /* line-height: 6px; */
   
+}
+
+@media screen and (max-width: 550px) {
+  .hoverImg {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .hoverImg {
+    width: 55px;
+  }
+  .cartBtn{
+    font-size: 15px; 
+  }
 }
 
 .cartBtn:hover{
