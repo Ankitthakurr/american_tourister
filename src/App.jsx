@@ -45,10 +45,7 @@ const App = () => {
                 <ImageContainer />
                 <GradientThird />
                 <FooterOne />
-<<<<<<< HEAD
-=======
                 
->>>>>>> master
               </>
             }
           />
