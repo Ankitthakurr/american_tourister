@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tBagFirst from "./tbagFirst.webp";
-import tBagSecond from "./tBagSecond.webp";
-import tBagThird from "./tBagThird.webp";
-import tBagFourth from "./tBagFourth.webp";
-import tBagFifth from "./tBagFifth.webp";
-import tBagSixth from "./tBagSixth.webp";
+import tBagFirst from "/tBagFirst.webp";
+import tBagSecond from "/tbagSecond.webp";
+import tBagThird from "/tBagThird.webp";
+import tBagFourth from "/tBagFourth.webp";
+import tBagFifth from "/tBagFifth.webp";
+import tBagSixth from "/tBagSixth.webp";
 
 
 const initialState = {
